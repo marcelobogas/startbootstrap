@@ -1,5 +1,15 @@
-<?php include(__DIR__ . "/includes/pages/header.php"); ?>
+<?php 
 
+session_start();
+
+/* redireciona o usuário para a tela de login caso não exista um id de sessão criado */
+if (!$_SESSION['sessionId']) {
+    header('location: login');
+}
+
+include(__DIR__ . "/includes/pages/header.php"); 
+
+?>
 <!-- Page Wrapper -->
 <div id="wrapper">
 

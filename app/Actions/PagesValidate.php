@@ -17,8 +17,6 @@ class PagesValidate
     public static function validate($url)
     {
         /* define o diretório para verificação de url */
-        /* $diretorio = "/resource/views"; */
-
         $diretorio = __DIR__ . "/../../resource/views";
 
         $paginasPermitidas = PagesController::getPages();
