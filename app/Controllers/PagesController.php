@@ -7,7 +7,7 @@ use App\Models\Pages;
 class PagesController
 {    
     /**
-     * Method getPage
+     * Método respo´nsável por obter as páginas cadastradas
      *
      * @return array
      */

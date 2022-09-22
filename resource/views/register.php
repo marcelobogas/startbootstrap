@@ -1,16 +1,15 @@
 <?php
 
-include(__DIR__ . "/includes/auth/header.php");
+session_start();
 
 use App\Controllers\UsersController;
+use App\Http\Request;
+
+include(__DIR__ . "/includes/auth/header.php");
 
 if (isset($_POST['submit'])) {
-
-    /* aplica o sanitize no post enviado pelo formulário */
-    $postVars = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
     /* envia os dados para a controller responsável */
-    UsersController::create($postVars);
+    UsersController::create((new Request)->getPostVars());
 }
 
 ?>
@@ -27,24 +26,24 @@ if (isset($_POST['submit'])) {
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                         </div>
-                        <form class="user" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
+                        <form class="user" method="POST" action="register">
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="text" class="form-control form-control-user" id="inputFirstName" name="inputFirstName" placeholder="First Name">
+                                    <input type="text" class="form-control form-control-user" id="inputFirstName" name="inputFirstName" placeholder="First Name" required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control-user" id="inputLastName" name="inputLastName" placeholder="Last Name">
+                                    <input type="text" class="form-control form-control-user" id="inputLastName" name="inputLastName" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-user" id="inputEmail" name="inputEmail" placeholder="Email Address">
+                                <input type="email" class="form-control form-control-user" id="inputEmail" name="inputEmail" placeholder="Email Address" required>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="password" class="form-control form-control-user" id="inputPassword" name="inputPassword" placeholder="Password">
+                                    <input type="password" class="form-control form-control-user" id="inputPassword" name="inputPassword" placeholder="Password" required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="password" class="form-control form-control-user" id="repeatPassword" name="repeatPassword" placeholder="Repeat Password">
+                                    <input type="password" class="form-control form-control-user" id="repeatPassword" name="repeatPassword" placeholder="Repeat Password" required>
                                 </div>
                             </div>
                             <input type="submit" name="submit" class="btn btn-primary btn-user btn-block" value="Register Account">

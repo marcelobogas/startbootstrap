@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Start-Bootstrap - Login</title>
+    <title><?php echo APP_TITLE; ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= trim(getenv('APP_URL')) . '/vendor/fontawesome-free/css/all.min.css'; ?>" rel="stylesheet" type="text/css">
