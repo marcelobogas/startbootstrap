@@ -40,13 +40,7 @@ include(__DIR__ . "/includes/pages/header.php");
         <!-- End of Main Content -->
 
         <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
+        <?php include(__DIR__ . "/includes/components/footer-content.php"); ?>
         <!-- End of Footer -->
 
     </div>

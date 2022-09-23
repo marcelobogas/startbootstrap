@@ -31,7 +31,8 @@ include(__DIR__ . "/includes/pages/header.php");
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Charts</h1>
+                <?php include(__DIR__ . '/includes/components/page-heading.php'); ?>
+                
                 <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
                     The charts below have been customized - for further customization options, please visit the <a target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
                         documentation</a>.</p>
@@ -100,13 +101,7 @@ include(__DIR__ . "/includes/pages/header.php");
         <!-- End of Main Content -->
 
         <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
+        <?php include(__DIR__ . "/includes/components/footer-content.php"); ?>
         <!-- End of Footer -->
 
     </div>

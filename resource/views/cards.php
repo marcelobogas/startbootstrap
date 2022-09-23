@@ -31,9 +31,7 @@ include(__DIR__ . "/includes/pages/header.php");
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Cards</h1>
-                </div>
+                <?php include(__DIR__ . '/includes/components/page-heading.php'); ?>
 
                 <div class="row">
 
@@ -203,13 +201,7 @@ include(__DIR__ . "/includes/pages/header.php");
         <!-- End of Main Content -->
 
         <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
+        <?php include(__DIR__ . "/includes/components/footer-content.php"); ?>
         <!-- End of Footer -->
 
     </div>

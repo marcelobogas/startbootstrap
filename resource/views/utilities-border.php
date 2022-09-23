@@ -31,7 +31,8 @@ include(__DIR__ . "/includes/pages/header.php");
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-1 text-gray-800">Border Utilities</h1>
+                <?php include(__DIR__ . '/includes/components/page-heading.php'); ?>
+                
                 <p class="mb-4">Bootstrap's default utility classes can be found on the official <a href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
                     below were created to extend this theme past the default utility classes built into Bootstrap's
                     framework.</p>
@@ -142,13 +143,7 @@ include(__DIR__ . "/includes/pages/header.php");
         <!-- End of Main Content -->
 
         <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
+        <?php include(__DIR__ . "/includes/components/footer-content.php"); ?>
         <!-- End of Footer -->
 
     </div>

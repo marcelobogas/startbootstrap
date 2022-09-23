@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 
@@ -7,10 +7,9 @@ if (!$_SESSION['sessionId']) {
     header('location: login');
 }
 
-include(__DIR__ . "/includes/pages/header.php"); 
+include(__DIR__ . "/includes/pages/header.php");
 
 ?>
-
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -31,12 +30,8 @@ include(__DIR__ . "/includes/pages/header.php");
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
-                <!-- 404 Error Text -->
                 <div class="text-center">
-                    <div class="error mx-auto" data-text="404">404</div>
-                    <p class="lead text-gray-800 mb-5">Page Not Found</p>
-                    <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-                    <a href="dashboard">&larr; Back to Dashboard</a>
+                    <img class="img-fluid px-3 px-sm-4 mt-5 mb-4" style="width: 25rem;" src="<?php echo trim(getenv('APP_ASSETS') . '/img/pagina-em-manutencao.jpg'); ?>" alt="...">
                 </div>
 
             </div>

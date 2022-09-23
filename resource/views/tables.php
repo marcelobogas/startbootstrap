@@ -31,7 +31,8 @@ include(__DIR__ . "/includes/pages/header.php");
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+                <?php include(__DIR__ . '/includes/components/page-heading.php'); ?>
+                
                 <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                     For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
@@ -533,13 +534,7 @@ include(__DIR__ . "/includes/pages/header.php");
         <!-- End of Main Content -->
 
         <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
+        <?php include(__DIR__ . "/includes/components/footer-content.php"); ?>
         <!-- End of Footer -->
 
     </div>

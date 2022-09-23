@@ -24,7 +24,7 @@ class Pages
         /* definição de páginas permitidas */
         $pages = [];
         foreach ($response as $value) {
-            array_push($pages, $value['slug']);
+            array_push($pages, $value);
         }
 
         /* retorna as informações em formato de array */

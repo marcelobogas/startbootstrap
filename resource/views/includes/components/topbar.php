@@ -8,7 +8,7 @@
     <!-- Topbar Search -->
     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
         <div class="input-group">
-            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <input type="text" class="form-control bg-gray-400 border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                     <i class="fas fa-search fa-sm"></i>
@@ -103,7 +103,7 @@
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
-                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                        <img class="rounded-circle" src="<?php echo trim(getenv('APP_ASSETS') . '/img/undraw_profile_1.svg'); ?>" alt="...">
                         <div class="status-indicator bg-success"></div>
                     </div>
                     <div class="font-weight-bold">
@@ -114,7 +114,7 @@
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
-                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                        <img class="rounded-circle" src="<?php echo trim(getenv('APP_ASSETS') . '/img/undraw_profile_2.svg'); ?>" alt="...">
                         <div class="status-indicator"></div>
                     </div>
                     <div>
@@ -125,7 +125,7 @@
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="dropdown-list-image mr-3">
-                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                        <img class="rounded-circle" src="<?php echo trim(getenv('APP_ASSETS') . '/img/undraw_profile_3.svg'); ?>" alt="...">
                         <div class="status-indicator bg-warning"></div>
                     </div>
                     <div>
