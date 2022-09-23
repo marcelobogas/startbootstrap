@@ -1,13 +1,14 @@
 {
-    "name": "marcelo/url-rewrite",
+    "name": "marcelo/startbootstrap",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         }
     },
     "require": {
-        "php": "^7.4",
+        "php": "^7.4|^8.0",
         "phpmailer/phpmailer": "^6.5",
-        "fpdf/fpdf": "^1.83"
+        "fpdf/fpdf": "^1.83",
+        "dompdf/dompdf": "^2.0"
     }
 }
