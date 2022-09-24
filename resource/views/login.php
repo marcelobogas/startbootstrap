@@ -29,7 +29,7 @@ if (isset($_POST['validar'])) {
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <?php
-                                if ($_SESSION['flash_message']) { ?>
+                                if (isset($_SESSION['flash_message'])) { ?>
                                     <div class="text-center pb-3">
                                         <span class="text-danger"><?php echo $_SESSION['flash_message']; ?></span>
                                     </div>
